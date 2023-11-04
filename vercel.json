@@ -6,7 +6,7 @@
       },
       {
         "src": "/ruta-protegida",
-        "dest": "/ruta-protegida.html"
+        "dest": "/welcome.html"
       },
       {
         "src": "/(.*)",
