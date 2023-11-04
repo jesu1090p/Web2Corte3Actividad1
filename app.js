@@ -17,11 +17,10 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname));
 
 const db = mysql.createConnection({
-    host: 'viaduct.proxy.rlwy.net',
-    user: 'root',
-    database: 'railway',
-    password: 'ABf46e--fBcAb2bhaCEfcDGa612gfD64',
-    port: 10307
+    host: 'ep-autumn-cherry-62655011-pooler.us-east-1.postgres.vercel-storage.com',
+    user: 'default',
+    database: 'verceldb',
+    password: 'G2kLVBuTp5xU'
 });
 
 db.connect((err) => {
