@@ -2,7 +2,7 @@
     "routes": [
       {
         "src": "/register",
-        "dest": "/api/register.js"
+        "dest": "register"
       },
       {
         "src": "/ruta-protegida",
