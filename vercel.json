@@ -2,11 +2,11 @@
     "routes": [
       {
         "src": "/register",
-        "dest": "/api/register.js"
+        "dest": "register"
       },
       {
         "src": "/ruta-protegida",
-        "dest": "/ruta-protegida.html"
+        "dest": "/welcome.html"
       },
       {
         "src": "/(.*)",
