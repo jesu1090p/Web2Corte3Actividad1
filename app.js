@@ -17,9 +17,11 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname));
 
 const db = mysql.createConnection({
-    host: 'localhost',
+    host: 'viaduct.proxy.rlwy.net',
     user: 'root',
-    database: 'web2act1',
+    database: 'railway',
+    password: 'ABf46e--fBcAb2bhaCEfcDGa612gfD64',
+    port: 10307
 });
 
 db.connect((err) => {
