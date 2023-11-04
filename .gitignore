@@ -1,0 +1,14 @@
+# Archivos y directorios generados por el sistema
+.DS_Store
+Thumbs.db
+
+# Carpeta node_modules generada por npm
+node_modules/
+
+# Archivos de registro y archivos temporales
+*.log
+*.tmp
+
+# Configuraciones de desarrollo local
+.env
+config.js
