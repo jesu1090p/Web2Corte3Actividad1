@@ -17,10 +17,9 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname));
 
 const db = mysql.createConnection({
-    host: 'viaduct.proxy.rlwy.net',
+    host: 'localhost',
     user: 'root',
-    database: 'railway',
-    password: 'ABf46e--fBcAb2bhaCEfcDGa612gfD64'
+    database: 'web2act1'
 });
 
 db.connect((err) => {
@@ -75,7 +74,7 @@ app.post('/register', (req, res) => {
     });
 });
 
-app.get('/ruta-protegida', (req, res) => {
+app.get('/welcome.html', (req, res) => {
     const token = req.cookies.token;
 
     if (!token) {
@@ -88,4 +87,8 @@ app.get('/ruta-protegida', (req, res) => {
         }
         res.redirect('/welcome.html');
     });
+});
+
+app.listen(3000, () => {
+    console.log('Servidor en ejecución en el puerto 3000');
 });

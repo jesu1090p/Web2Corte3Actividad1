@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response.status === 200) {
             const data = await response.json();
             alert(data.message);
-            window.location.href = '/ruta-protegida'; // Redirige a la ruta protegida
+            window.location.href = '/welcome.html'; // Redirige a la ruta protegida
         } else {
             alert('Usuario no creado');
         }
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response.status === 200) {
             const data = await response.json();
             alert(data.message);
-            window.location.href = '/ruta-protegida'; // Redirige a la ruta protegida
+            window.location.href = '/welcome.html'; // Redirige a la ruta protegida
         } else {
             alert('Error al registrar usuario');
         }
