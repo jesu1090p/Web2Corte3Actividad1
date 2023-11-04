@@ -69,7 +69,7 @@ app.post('/register', (req, res) => {
     db.query('INSERT INTO users (username, password) VALUES (?, ?)', [username, password], (err, result) => {
         if (err) {
             console.error('Error al registrar el usuario:', err);
-            return res.status(500).json({ message: 'Error al registrar el usuario',err});
+            return res.status(500).json({ message: 'Error al registrar el usuario'});
         }
         console.log('Registro exitoso:', result);
         res.json({ message: 'Usuario registrado con éxito' });
@@ -89,8 +89,4 @@ app.get('/ruta-protegida', (req, res) => {
         }
         res.redirect('/welcome.html');
     });
-});
-
-app.listen(3000, () => {
-    console.log('Servidor en ejecución en el puerto 3000');
 });
