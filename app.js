@@ -17,9 +17,11 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname));
 
 const db = mysql.createConnection({
-    host: 'localhost',
+    host: 'containers-us-west-140.railway.app',
     user: 'root',
-    database: 'web2act1'
+    password: 'w0WUsXAYnxl4NjpkseDc',
+    database: 'railway',
+    port: '5737'
 });
 
 db.connect((err) => {
@@ -33,7 +35,7 @@ db.connect((err) => {
 const secretKey = 'tu_clave_secreta';
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/');
 });
 
 app.post('/login', (req, res) => {
